@@ -7,14 +7,14 @@ import styles from "./Modal.scss";
 
 type Props = {
   isOpen: boolean;
-  width: string;
-  height: string;
-  overlayClassName: string;
-  modalClassName: string;
-  closeButton: boolean;
-  closeOnClickOutside: boolean;
-  isCentered: boolean;
   onClose: () => void;
+  width?: string;
+  height?: string;
+  overlayClassName?: string;
+  modalClassName?: string;
+  closeButton?: boolean;
+  closeOnClickOutside?: boolean;
+  isCentered?: boolean;
 };
 
 const Modal: React.FC<Props> = ({

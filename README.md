@@ -2,6 +2,8 @@
 
 As easy as your fingers snap modal using `createPortal`.
 
+Demo: https://snap-components.netlify.app/?path=/story/snap-modal--controlled-dimensions
+
 ## Install
 
 `npm install snap-react-modal`

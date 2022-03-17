@@ -1,13 +1,13 @@
 {
   "name": "snap-react-modal",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "As easy as your fingers snap",
   "main": "build/bundle.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/nasaownsky/snap-react-modal"
   },
-  "homepage": "https://github.com/nasaownsky/snap-react-modal#readme",
+  "homepage": "https://snap-components.netlify.app/?path=/story/snap-modal--controlled-dimensions",
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack --mode development --watch",

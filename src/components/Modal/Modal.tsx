@@ -8,8 +8,8 @@ import styles from "./Modal.scss";
 type Props = {
   isOpen: boolean;
   onClose: () => void;
-  width?: string;
-  height?: string;
+  width?: number | string;
+  height?: number | string;
   overlayClassName?: string;
   modalClassName?: string;
   closeButton?: boolean;
@@ -34,7 +34,6 @@ const Modal: React.FC<Props> = ({
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
-
     return () => {
       document.body.style.overflow = "";
     };
@@ -77,7 +76,7 @@ const Modal: React.FC<Props> = ({
               onClick={onClose}
             />
           )}
-          <div className={styles.modal__content}>{children}</div>
+          {children}
         </div>
       </div>
     </div>,

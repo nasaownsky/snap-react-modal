@@ -2,13 +2,13 @@
 
 As easy as your fingers snap modal using `createPortal`.
 
-Demo: https://snap-components.netlify.app/?path=/story/snap-modal--controlled-dimensions
+Demo: https://snap-components.netlify.app/?path=/story/snap-modal--basic
 
 ## Install
 
 `npm install snap-react-modal`
 
-## As easy as your finger snap 👌
+## As easy as your fingers snap 👌
 
 ~~~js
 <Modal isOpen={isOpen} onClose={() => setOpen(false)}>
@@ -22,7 +22,7 @@ Demo: https://snap-components.netlify.app/?path=/story/snap-modal--controlled-di
 import Modal from "snap-react-modal";
 
 function App() {
-  const [open, setOpen] = React.useState(false);
+  const [isOpen, setOpen] = React.useState(false);
 
   return (
     <div className="App">
@@ -52,4 +52,4 @@ function App() {
 - `modalClassName`: overrides main container of the modal (note: please use `!important` property in your css to make sure that styles will apply)
 - `closeButton`: defines if the default close button is showing
 - `closeOnClickOutside`: defines if the modal is closable on outside click
-- `isCentered`: defines if the modal is vertically centered
+- `isCentered`: defines if the modal is vertically centered (set false to enable scrollable wrapper)
